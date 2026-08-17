@@ -1,0 +1,125 @@
+.category-budget-detail-heading {
+  display: grid;
+  gap: 3px;
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+
+.category-budget-detail-heading h3 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.category-budget-detail-heading span {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.budget-overall-detail {
+  margin-bottom: 4px;
+}
+
+.category-budget-detail-list {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 15px;
+}
+
+.category-budget-detail-row {
+  display: grid;
+  gap: 10px;
+  padding: 13px;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.category-budget-detail-row:last-child {
+  border-bottom: 0;
+}
+
+.category-budget-detail-title {
+  display: grid;
+  grid-template-columns: 5px 30px minmax(0, 1fr);
+  align-items: center;
+  gap: 7px;
+}
+
+.category-budget-detail-color {
+  display: block;
+  width: 5px;
+  height: 32px;
+  border-radius: 999px;
+}
+
+.category-budget-detail-icon {
+  text-align: center;
+  font-size: 18px;
+}
+
+.category-budget-detail-title > div {
+  display: grid;
+  gap: 2px;
+  min-width: 0;
+}
+
+.category-budget-detail-title strong {
+  overflow: hidden;
+  font-size: 13px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.category-budget-detail-title small {
+  color: var(--muted);
+  font-size: 9px;
+}
+
+.category-budget-detail-values {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.category-budget-detail-values span:last-child {
+  text-align: right;
+}
+
+.category-budget-detail-values strong {
+  color: var(--text);
+  font-size: 11px;
+}
+
+.category-budget-progress {
+  overflow: hidden;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--surface-soft);
+}
+
+.category-budget-progress > span {
+  display: block;
+  height: 100%;
+  min-width: 0;
+  border-radius: inherit;
+}
+
+.category-budget-result {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.category-budget-result strong {
+  color: var(--text);
+  font-size: 13px;
+}
+
+.category-budget-result--over,
+.category-budget-result--over strong {
+  color: var(--expense);
+}

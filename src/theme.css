@@ -1,0 +1,36 @@
+:root,
+:root[data-theme="light"] {
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  --background: #121418;
+  --surface: #1b1f25;
+  --surface-soft: #232830;
+  --text: #f2f4f7;
+  --muted: #a5adba;
+  --border: #343b46;
+  --accent: #6ea8ff;
+  --expense: #ff6b6b;
+  --income: #69a7ff;
+}
+
+:root[data-theme="dark"] body {
+  background: var(--background);
+  color: var(--text);
+}
+
+:root[data-theme="dark"] input,
+:root[data-theme="dark"] select,
+:root[data-theme="dark"] textarea,
+:root[data-theme="dark"] button {
+  color-scheme: dark;
+}
+
+/* ユーザー希望の削除ボタンは常に白背景を維持 */
+:root[data-theme="dark"] .transaction-delete-button {
+  background: #ffffff;
+  color: var(--expense);
+}

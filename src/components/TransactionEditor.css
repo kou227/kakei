@@ -1,0 +1,131 @@
+.transaction-detail-item {
+  cursor: pointer;
+}
+
+.transaction-detail-amount {
+  display: grid;
+  justify-items: end;
+  gap: 4px;
+  color: var(--muted);
+}
+
+.transaction-detail-help {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 11px;
+  text-align: center;
+}
+
+.transaction-editor-backdrop {
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  background: var(--background);
+}
+
+.transaction-editor {
+  width: min(100%, 520px);
+  min-height: 100dvh;
+  margin: 0 auto;
+  background: var(--background);
+}
+
+.transaction-editor-header {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  display: grid;
+  grid-template-columns: 42px 1fr 42px;
+  align-items: center;
+  gap: 8px;
+  padding: calc(12px + env(safe-area-inset-top)) 16px 12px;
+  border-bottom: 1px solid var(--border);
+  background: var(--background);
+}
+
+.transaction-editor-header h2 {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.transaction-editor-body {
+  display: grid;
+  gap: 14px;
+  padding: 18px 16px calc(48px + env(safe-area-inset-bottom));
+}
+
+.transaction-editor-card {
+  display: grid;
+  gap: 17px;
+  padding: 17px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--surface);
+}
+
+.transaction-editor-card textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: vertical;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  outline: 0;
+  background: var(--surface-soft);
+  color: var(--text);
+  font: inherit;
+  line-height: 1.55;
+}
+
+.transaction-editor-card textarea:focus,
+.transaction-editor-card input:focus,
+.transaction-editor-card select:focus {
+  border-color: var(--accent);
+}
+
+.transaction-editor-note {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.transaction-editor-counter {
+  color: var(--muted);
+  font-size: 10px;
+  text-align: right;
+}
+
+.transaction-editor-error {
+  margin: 0;
+  color: var(--expense);
+  font-size: 12px;
+  text-align: center;
+}
+
+.transaction-save-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.transaction-save-button:disabled {
+  opacity: 0.6;
+}
+
+.transaction-delete-button {
+  display: flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  border: 1px solid var(--expense);
+  border-radius: 14px;
+  background: #ffffff;
+  color: var(--expense);
+  font-weight: 800;
+}
