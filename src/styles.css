@@ -506,9 +506,13 @@ button { cursor: pointer; }
   -webkit-appearance: none;
   appearance: none;
   overflow: hidden;
+  line-height: normal;
 }
 
 .field input[type="date"]::-webkit-date-and-time-value {
   min-width: 0;
   text-align: left;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
