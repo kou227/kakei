@@ -149,12 +149,16 @@
 
 .emoji-grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
+  grid-template-columns: repeat(8, minmax(0, 1fr));
   gap: 7px;
+  width: 100%;
+  min-width: 0;
 }
 
 .emoji-button {
   display: grid;
+  min-width: 0;
+  padding: 0;
   aspect-ratio: 1;
   place-items: center;
   border: 1px solid var(--border);
@@ -174,6 +178,8 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  min-width: 0;
+  max-width: 100%;
   margin-top: 9px;
   color: var(--muted);
   font-size: 12px;
@@ -181,6 +187,8 @@
 
 .emoji-custom input {
   width: 64px;
+  min-width: 0;
+  max-width: 64px;
   min-height: 38px;
   padding: 0 8px;
   border: 1px solid var(--border);
@@ -292,6 +300,6 @@
 
 @media (max-width: 390px) {
   .emoji-grid {
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 }
