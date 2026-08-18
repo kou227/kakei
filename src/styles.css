@@ -516,3 +516,25 @@ button { cursor: pointer; }
   align-items: center;
   height: 100%;
 }
+
+.category-editor-form,
+.category-editor-form .field {
+  min-width: 0;
+}
+
+.category-editor-form input,
+.category-editor-form select {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.category-editor-form .emoji-custom {
+  min-width: 0;
+}
+
+.category-editor-form .emoji-custom input {
+  min-width: 0;
+  max-width: 100%;
+}
